@@ -9,11 +9,17 @@ namespace Rubles
             Console.Write("Введите число ");
             int money = int.Parse(Console.ReadLine());
             if ((money >= 11 && money <= 19) || money % 10 == 0 || money % 10 == 5 || money % 10 == 6 || money % 10 == 7 || money % 10 == 8 || money % 10 == 9)
+            {
                 Console.WriteLine($"У Вас {money} рублей");
+            }
             else if (money % 10 == 1)
+            {
                 Console.WriteLine($"У Вас {money} рубль");
+            }
             else
+            {
                 Console.WriteLine($"У Вас {money} рубля");
+            }
             Console.Read();
         }
     }
